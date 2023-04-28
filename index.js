@@ -12,6 +12,11 @@ function makeDivs(num) {
 }
 makeDivs(256);
 
+window.addEventListener("load", ()=>{
+    grid.width = grid.offsetWidth;
+    grid.height = grid.offsetHeight;
+});
+
 const drawing = (e) =>{
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
@@ -20,6 +25,6 @@ const drawing = (e) =>{
 grid.addEventListener("mousemove", drawing);
 
 eraser.addEventListener("click", ()=>{
-    ctx.clearRect(0,0, grid.width, grid.height);
+    ctx.clearRect(0,0, grid.offsetWidth, grid.offsetHeight);
 })
 
