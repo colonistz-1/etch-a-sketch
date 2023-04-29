@@ -17,14 +17,21 @@ window.addEventListener("load", ()=>{
     grid.height = grid.offsetHeight;
 });
 
+let isDrawing = false
+
+const startDraw = () =>{
+    isDrawing = true;
+    ctx.beginPath(); 
+}
 const drawing = (e) =>{
+    if (!isDrawing) return;
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
 }
 
-grid.addEventListener("mousemove", drawing);
+grid.addEventListener("mousedown", startDraw)
+grid.addEventListener("mousemove", drawing)
+grid.addEventListener("mouseup", () => isDrawing =false)
 
-eraser.addEventListener("click", ()=>{
-    ctx.clearRect(0,0, grid.offsetWidth, grid.offsetHeight);
-})
+
 
