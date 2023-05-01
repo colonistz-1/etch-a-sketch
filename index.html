@@ -12,8 +12,18 @@
     <h1 id="title"> Sketch Board</h1>
     <canvas id="grid">     
     </canvas>
-    <input type="range" id="brush-size" min="0" max="25" value="10"> 
-    <button id="erase"> Erase!</button>
+    <input type="range" id="brush-size" min="1" max="20" value="5"> 
+    <div class="palette">
+        <ul class="colors">
+            <li id="red"></li>
+            <li id="blue"></li>
+            <li id="green"></li>
+            <li id="orange"></li>
+            <li id="purple"></li>
+            <li id="black"></li>
+          </ul>
+        <button id="erase"> Erase!</button>
+    </div>
     <script src="index.js" defer></script>
 </body>
 </html>

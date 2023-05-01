@@ -22,9 +22,16 @@
 }
 
 
-#brush-size{
-  display:flex;
-  margin-left: 52.5rem;
+#brush-size {
+  display: flex;
+  margin-left: 43rem;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.slider {
+  width: 100%;
 }
 
 
@@ -52,4 +59,44 @@
 #erase:active{
   position:relative;
 	top:1px;
+}
+
+.colors{
+  display: grid;
+  grid-template-columns: repeat(3, 0.09fr);
+  grid-template-rows: repeat(2, 2fr);
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#red{
+  background-color: rgb(248, 14, 14);
+}
+#blue {
+  background-color: rgba(5, 82, 248, 0.979);
+}
+#green{
+  background: #07df11fa;
+}
+#orange{
+  background: rgb(241, 67, 3)
+}
+#purple{
+  background-color: #8c06fa;
+}
+#black{
+  background-color: rgb(3, 3, 3);
 }
