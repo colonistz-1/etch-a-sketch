@@ -1,7 +1,14 @@
 const grid = document.querySelector("#grid")
 const eraser = document.querySelector("#erase")
 ctx = grid.getContext("2d");
+const brushslider = document.querySelector("#brush-size");
+let brushThickness = brushslider.value; 
+ctx.lineWidth = brushThickness;
 
+brushslider.addEventListener("change", (e) => {
+    brushThickness = e.target.value;
+    ctx.lineWidth = brushThickness;
+  });
 function makeDivs(num) {
     for (let i = 0; i < num; i++){
         let cells = document.createElement('div');
