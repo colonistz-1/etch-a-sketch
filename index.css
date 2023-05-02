@@ -86,16 +86,16 @@ li {
   background-color: rgb(248, 14, 14);
 }
 #blue {
-  background-color: rgba(5, 82, 248, 0.979);
+  background-color: rgba(6, 77, 230, 0.98);
 }
 #green{
-  background: #07df11fa;
+  background: rgba(7, 223, 17, 0.98);
 }
 #orange{
   background: rgb(247, 121, 4)
 }
 #purple{
-  background-color: #8c06fa;
+  background-color: rgb(140, 6, 250);
 }
 #black{
   background-color: rgb(3, 3, 3);
