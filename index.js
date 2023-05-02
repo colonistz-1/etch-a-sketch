@@ -39,6 +39,8 @@ const drawing = (e) =>{
 grid.addEventListener("mousedown", startDraw)
 grid.addEventListener("mousemove", drawing)
 grid.addEventListener("mouseup", () => isDrawing =false)
+eraser.addEventListener("click", () => location.reload()
+)
 
 
 
