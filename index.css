@@ -63,8 +63,8 @@
 
 .colors{
   display: grid;
-  grid-template-columns: repeat(3, 0.09fr);
-  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(3, 0.07fr);
+  grid-template-rows: repeat(2, 0.2fr);
   gap: 5px;
   align-items: center;
   justify-content: center;
@@ -92,7 +92,7 @@ li {
   background: #07df11fa;
 }
 #orange{
-  background: rgb(241, 67, 3)
+  background: rgb(247, 121, 4)
 }
 #purple{
   background-color: #8c06fa;
@@ -101,3 +101,27 @@ li {
   background-color: rgb(3, 3, 3);
 }
 
+
+#red:hover{
+  background-color: rgb(180, 6, 0);
+}
+
+#blue:hover{
+  background-color: rgba(0, 48, 153, 0.979);
+}
+
+#green:hover{
+  background-color: #019108fa;
+}
+
+#orange:hover{
+  background-color: rgb(139, 67, 0);
+}
+
+#purple:hover{
+  background-color: #480480;
+}
+
+#black:hover{
+  background-color: rgb(58, 58, 58);
+}
