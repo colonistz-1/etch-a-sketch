@@ -6,6 +6,7 @@ const greenbtn = document.querySelector("#green")
 const orangebtn = document.querySelector("#orange")
 const purplebtn = document.querySelector("#purple")
 const blackbtn = document.querySelector("#black")
+const erasePen = document.querySelector("#erasePen")
 ctx = grid.getContext("2d");
 const brushslider = document.querySelector("#brush-size");
 let brushThickness = brushslider.value; 
@@ -52,3 +53,7 @@ greenbtn.addEventListener("click", () => ctx.strokeStyle = 'rgba(7, 223, 17, 0.9
 orangebtn.addEventListener('click', () => ctx.strokeStyle = 'rgb(247, 121, 4)');
 purplebtn.addEventListener("click", () => ctx.strokeStyle = "rgb(140, 6, 250)");
 blackbtn.addEventListener('click', () => ctx.strokeStyle = "black");
+erasePen.addEventListener("click", function(){
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = "25";
+})
